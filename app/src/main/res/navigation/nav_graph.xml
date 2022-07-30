@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/viewPagerFragment">
+
+    <fragment
+        android:id="@+id/iconSetFragment"
+        android:name="com.shubhankaranku.iconix.fragments.home.IconSetFragment"
+        android:label="fragment_icon_set"
+        tools:layout="@layout/fragment_icon_set" />
+    <fragment
+        android:id="@+id/iconsFragment"
+        android:name="com.shubhankaranku.iconix.fragments.home.IconsFragment"
+        android:label="fragment_icons"
+        tools:layout="@layout/fragment_icons" />
+    <fragment
+        android:id="@+id/iconSetDetailsFragment"
+        android:name="com.shubhankaranku.iconix.fragments.otherFragments.IconSetDetailsFragment"
+        android:label="fragment_icon_set_details"
+        tools:layout="@layout/fragment_icon_set_details">
+        <action
+            android:id="@+id/action_iconSetDetailsFragment_to_authorDetailsFragment"
+            app:destination="@id/authorDetailsFragment" />
+        <action
+            android:id="@+id/action_iconSetDetailsFragment_to_iconsDetailsFragment"
+            app:destination="@id/iconsDetailsFragment" />
+        <argument
+            android:name="iconset_id"
+            app:argType="integer" />
+        <argument
+            android:name="iconSet"
+            app:argType="string" />
+        <argument
+            android:name="type"
+            app:argType="string" />
+        <argument
+            android:name="author"
+            app:argType="string" />
+        <argument
+            android:name="price"
+            app:argType="integer" />
+        <argument
+            android:name="license"
+            app:argType="string" />
+        <argument
+            android:name="user_id"
+            app:argType="integer" />
+    </fragment>
+    <fragment
+        android:id="@+id/iconsDetailsFragment"
+        android:name="com.shubhankaranku.iconix.fragments.otherFragments.IconsDetailsFragment"
+        android:label="fragment_icons_details"
+        tools:layout="@layout/fragment_icons_details">
+        <action
+            android:id="@+id/action_iconsDetailsFragment_to_authorDetailsFragment"
+            app:destination="@id/authorDetailsFragment" />
+        <argument
+            android:name="icon_url"
+            app:argType="string" />
+        <argument
+            android:name="icon_name"
+            app:argType="string" />
+        <argument
+            android:name="author_name"
+            app:argType="string" />
+        <argument
+            android:name="icon_type"
+            app:argType="string" />
+        <argument
+            android:name="icon_price"
+            app:argType="integer" />
+        <argument
+            android:name="icon_id"
+            app:argType="integer" />
+        <argument
+            android:name="icon_license"
+            app:argType="string" />
+    </fragment>
+    <fragment
+        android:id="@+id/authorDetailsFragment"
+        android:name="com.shubhankaranku.iconix.fragments.otherFragments.AuthorDetailsFragment"
+        android:label="fragment_author_details"
+        tools:layout="@layout/fragment_author_details">
+        <action
+            android:id="@+id/action_authorDetailsFragment_to_iconSetDetailsFragment"
+            app:destination="@id/iconSetDetailsFragment" />
+        <argument
+            android:name="user_id"
+            app:argType="integer" />
+        <argument
+            android:name="name"
+            app:argType="string" />
+        <argument
+            android:name="license"
+            app:argType="string" />
+    </fragment>
+    <fragment
+        android:id="@+id/viewPagerFragment"
+        android:name="com.shubhankaranku.iconix.fragments.home.ViewPagerFragment"
+        android:label="fragment_view_pager"
+        tools:layout="@layout/fragment_view_pager">
+        <action
+            android:id="@+id/action_viewPagerFragment_to_iconSetDetailsFragment"
+            app:destination="@id/iconSetDetailsFragment" />
+        <action
+            android:id="@+id/action_viewPagerFragment_to_iconsDetailsFragment"
+            app:destination="@id/iconsDetailsFragment" />
+    </fragment>
+</navigation>

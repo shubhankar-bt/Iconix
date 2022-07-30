@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="app/src/main/res/drawable/background.xml" value="0.203" />
+        <entry key="app/src/main/res/drawable/ic_download.xml" value="0.155" />
+        <entry key="app/src/main/res/drawable/ic_search_icon.xml" value="0.155" />
+        <entry key="app/src/main/res/drawable/ic_splash_screen.xml" value="0.155" />
+        <entry key="app/src/main/res/drawable/placeholder.xml" value="0.155" />
+        <entry key="app/src/main/res/drawable/price_text_view_bg.xml" value="0.155" />
+        <entry key="app/src/main/res/drawable/radio_button_active.xml" value="0.155" />
+        <entry key="app/src/main/res/drawable/radio_button_inactive.xml" value="0.155" />
+        <entry key="app/src/main/res/drawable/search_edit_text_bg.xml" value="0.155" />
+        <entry key="app/src/main/res/drawable/selector_radio_button.xml" value="0.155" />
+        <entry key="app/src/main/res/drawable/selector_radio_button_text_color.xml" value="0.155" />
+        <entry key="app/src/main/res/layout/activity_main.xml" value="0.3098958333333333" />
+        <entry key="app/src/main/res/layout/fragment_author_details.xml" value="0.30885416666666665" />
+        <entry key="app/src/main/res/layout/fragment_icon_set.xml" value="0.30885416666666665" />
+        <entry key="app/src/main/res/layout/fragment_icon_set_details.xml" value="0.30885416666666665" />
+        <entry key="app/src/main/res/layout/fragment_icons.xml" value="0.3006474812825519" />
+        <entry key="app/src/main/res/layout/fragment_icons_details.xml" value="0.30885416666666665" />
+        <entry key="app/src/main/res/layout/fragment_view_pager.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/recycler_view_layout_icon_set.xml" value="0.3098958333333333" />
+        <entry key="app/src/main/res/layout/recycler_view_layout_search_icon.xml" value="0.3098958333333333" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>
